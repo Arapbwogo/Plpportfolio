@@ -1,2 +1,3 @@
 # Plpportfolio
-It's a plp group assignment.  
+It's a plp group assignment. It shows the my portflio.
+
