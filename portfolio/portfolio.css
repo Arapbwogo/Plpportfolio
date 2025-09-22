@@ -1,13 +1,31 @@
 body{
     background-color:green;
     color:white;
-    text-align:center;
 }
 a:hover{color:yellow;}
-.wrap img{]
-height: 600px;
-width: 600px;
+img{
+height: 100px;
+width: 100px;
 border-radius: 100%;
-float: left;
+float: center;
 margin: 10px;
+}
+.text-with-lines{
+    height: 10px;
+    width: 0.1px;
+    margin-right: 0px;
+    background-color: black;
+    display: inline-block;
+}
+span{
+    text-decoration: aqua;
+    display: inline-block;
+}
+.wrap{
+    display:inline-block;
+    text-align: left;
+}
+h1{
+    marquee: scroll;
+    color: aqua;
 }
