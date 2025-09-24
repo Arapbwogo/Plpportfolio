@@ -4,11 +4,11 @@ body{
 }
 a:hover{color:yellow;}
 img{
-height: 100px;
-width: 100px;
+height: 25px;
+width: 25px;
 border-radius: 100%;
 float: center;
-margin: 10px;
+margin: 0px;
 }
 .text-with-lines{
     height: 10px;
@@ -19,7 +19,7 @@ margin: 10px;
 }
 span{
     text-decoration: aqua;
-    display: inline-block;
+    display: flex;
 }
 .wrap{
     display:inline-block;
