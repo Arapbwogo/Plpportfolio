@@ -1,4 +1,11 @@
+html{
+    height:100%;
+}
+
 body{
+    min-height:100%;
+    display:flex;
+    flex-direction:column;
     background-color:green;
     color:white;
 }
@@ -58,8 +65,9 @@ h1{
   100% {top: 0px; left: 150px; background: red;}
 }
 footer{
+    margin-top:auto;
     align-items:left;
     text-align:left;
     bottom:0;
-    
+    background-color:rgba(155, 177, 31, 0.788), 0.829, 0.774, 0.747;
 }
