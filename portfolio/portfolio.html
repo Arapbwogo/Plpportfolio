@@ -5,32 +5,42 @@
         <link rel="stylesheet" type="text/css" href="portfolio.css">
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>>&#128129;</text></svg>">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="portfolio.js"></script>
     </head>
     <body>
-        <span class="header">
-        <h1>Feel well and comfortable.</h1>
-        <div class="wrap">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5uXONorJewwOhb7xorlf6BzVr2Ufytjv3oQ&s" alt="check-your-internet-connection">
-        </div>
-        <i class="material-icons">home</i>
-        <i class="material-icons">search</i>
-        <i class="material-icons">menu</i>
-        <i class="material-icons">settings</i>
-        <i class="material-icons">person</i>
-        <i class="material-icons" id="x">close</i>
-        </span>
+        <header class="header">
+            <div class="top">
+            <div class="toggle-container">
+                <button id="toggleButton"><i class="material-icons">menu</i></button>
+                <div id="hiddenItems" class="hidden">
+                    <i class="material-icons">home</i>
+                    <i class="material-icons">settings</i>
+                    <i class="material-icons">person</i>
+                    <i class="material-icons">close</i>
+                </div>
+            </div>
+            <h1>Feel well and comfortable.</h1>
+            <a href=""><i class="material-icons">search</i></a>
+            </div>
+            <div class="wrap">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5uXONorJewwOhb7xorlf6BzVr2Ufytjv3oQ&s" alt="check-your-internet-connection">
+            </div>
+        </header>
         <p>&#128129 BWOGO</p>
         <a href="https://portfolio.github.io/">Learn</a>
         <p>welcome to Bwogo's learning and testing site.</p>
         <div class="mymove">NICE!!!</div>
+        <div id="itemContainer"></div>
+        <button id="addItemButton">Add Item</button>
         <footer>
-            <div>
-            <div class="text-with-lines"></div>
-            <a href="Home">Home</a>
-            <div class="text-with-lines"></div>
-            <a href="About">About</a>
-            <div class="text-with-lines"></div>
-            <a href="Contact">contact</a>
+            <div class="text-with-lines">
+                <ul class="list-inline">
+                    <li><a href="Home">Home</a></li>
+                    <div class="text-with-lines"></div>
+                    <li><a href="About">About</a></li>
+                    <div class="text-with-lines"></div>
+                    <li><a href="Contact">contact</a></li>
+                </ul>
             </div>
         </footer>
     </body>

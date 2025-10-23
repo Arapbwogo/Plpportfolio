@@ -4,42 +4,39 @@ html{
 
 body{
     min-height:100%;
-    display:flex;
-    flex-direction:column;
     background-color:green;
     color:white;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
 }
 a:hover{color:yellow;}
 img{
-height: 25px;
-width: 25px;
-border-radius: 100%;
-float: left;
-margin: 0px;
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;   
+    margin: 1px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .text-with-lines{
-    height: 10px;
+    height: 11px;
     width: 0.1px;
-    margin-right: 0px;
+    margin-right: 1px;
     background-color: black;
     display: inline-block;
-}
-span{
-    text-decoration: aqua;
-    display: flex;
+    padding: 1px;
 }
 .wrap{
-    display:inline-block;
-    text-align: left;
-    align-content:left;
+    
 }
 h1{
     color: aqua;
+    text-align: center;
     animation:change 4s infinite;
-}
-.header{
-    background-color:grey;
-    align-items: left;
 }
 @keyframes change{
     0%{color:aqua;}
@@ -47,6 +44,10 @@ h1{
     50%{colo:green;}
     75%{color:yellow;}
     100%{color:aqua;}
+}
+.header{
+    background-color:orange;
+    justify-content: space-between;
 }
 .mymove{
     width:100px;
@@ -69,5 +70,45 @@ footer{
     align-items:left;
     text-align:left;
     bottom:0;
+    display: grid;
+    lign-items: end;
     background-color:rgba(155, 177, 31, 0.788), 0.829, 0.774, 0.747;
+}
+.list-inline{
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+}
+li{
+    display: inline-block;
+    margin-right: 1px;
+}
+#itemContainer {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 50px;
+  margin-top: 10px;
+}
+
+.addedItem {
+  background-color: lightblue;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 4px;
+}
+.hidden{
+    display: none;
+}
+.toggle-container{
+    margin:20x;
+    padding: 3px;
+    border: 1px solid red;
+    align-content: left;
+}
+#toggleButton{
+    padding: 8px 15px;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+    border: none;
 }
