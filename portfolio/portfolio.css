@@ -1,7 +1,6 @@
 html{
     height:100%;
 }
-
 body{
     min-height:100%;
     background-color:green;
@@ -11,16 +10,22 @@ body{
 .top{
     display: flex;
     justify-content: space-between;
+    height: 30px;
 }
 a:hover{color:yellow;}
+.search-bar{
+    padding: 1px;
+    border: 1px solid #ccc;
+}
 img{
     display: block;
     height: 35px;
     width: 35px;
     border-radius: 100%;   
-    margin: 1px;
+    margin: 2px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5.5px;
 }
 .text-with-lines{
     height: 11px;
@@ -36,6 +41,7 @@ img{
 h1{
     color: aqua;
     text-align: center;
+    margin-top: 0px;
     animation:change 4s infinite;
 }
 @keyframes change{
@@ -47,6 +53,8 @@ h1{
 }
 .header{
     background-color:orange;
+    height: 80px;
+    width: 100%;
     justify-content: space-between;
 }
 .mymove{
@@ -89,7 +97,6 @@ li{
   min-height: 50px;
   margin-top: 10px;
 }
-
 .addedItem {
   background-color: lightblue;
   margin: 5px;
@@ -99,14 +106,19 @@ li{
 .hidden{
     display: none;
 }
+#hiddenItems.visible{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .toggle-container{
-    margin:20x;
-    padding: 3px;
-    border: 1px solid red;
+    margin: 2px;
+    padding: 0px;
+    border: 100%;
     align-content: left;
 }
 #toggleButton{
-    padding: 8px 15px;
+    padding: 0px;
     cursor: pointer;
     color: white;
     background-color: grey;

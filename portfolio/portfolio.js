@@ -16,5 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 document.addEventListener('DOMContentLoaded',()=>{
-  
-})
+  const toggleButton = document.getElementById('toggleButton');
+  const hiddenItems = document.getElementById('hiddenItems');
+
+  toggleButton.addEventListener('click', function() {
+    hiddenItems.classList.toggle('hidden');
+  });
+});
